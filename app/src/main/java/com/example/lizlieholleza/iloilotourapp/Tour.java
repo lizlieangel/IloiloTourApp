@@ -43,7 +43,7 @@ public class Tour {
 
     public String getName() {
         return name;
-    };
+    }
 
     public int getImageID() {
         return imageID;
