@@ -4,8 +4,8 @@ public class Tour {
     private String name;
     private int imageID;
     private int numberOfTours;
-    private float distance;
-    private float time;
+    private int distance;
+    private int time;
     private String food;
     private int soundID;
     private String englishWord;
@@ -17,7 +17,7 @@ public class Tour {
         this.imageID = image;
     }
 
-    public Tour(String place, float distance, float time, int image) {
+    public Tour(String place, int distance, int time, int image) {
         this.name = place;
         this.distance = distance;
         this.time = time;
@@ -53,11 +53,11 @@ public class Tour {
         return numberOfTours;
     }
 
-    public float getDistance() {
+    public int getDistance() {
         return distance;
     }
 
-    public float getTime() {
+    public int getTime() {
         return time;
     }
 
@@ -71,5 +71,9 @@ public class Tour {
 
     public String getNativeWord() {
         return nativeWord;
+    }
+
+    public String getFood() {
+        return food;
     }
 }
