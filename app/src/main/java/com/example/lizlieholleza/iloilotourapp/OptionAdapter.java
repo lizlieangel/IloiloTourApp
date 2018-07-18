@@ -6,10 +6,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class OptionFragment extends FragmentPagerAdapter {
+public class OptionAdapter extends FragmentPagerAdapter {
     private Context context;
 
-    public OptionFragment(FragmentManager fm, Context context) {
+    public OptionAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }

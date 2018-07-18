@@ -3,7 +3,6 @@ package com.example.lizlieholleza.iloilotourapp;
 public class Tour {
     private String name;
     private int imageID;
-    private int numberOfTours;
     private int distance;
     private int time;
     private String food;
@@ -41,10 +40,6 @@ public class Tour {
 
     public int getImageID() {
         return imageID;
-    }
-
-    public int getNumberOfTours() {
-        return numberOfTours;
     }
 
     public int getDistance() {
