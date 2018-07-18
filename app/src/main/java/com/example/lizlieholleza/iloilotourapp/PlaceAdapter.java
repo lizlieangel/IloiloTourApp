@@ -1,24 +1,22 @@
 package com.example.lizlieholleza.iloilotourapp;
 
+import android.annotation.TargetApi;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.util.Log;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
+
+import static android.provider.Settings.Global.getString;
 
 public class PlaceAdapter extends ArrayAdapter<Tour> {
-    public PlaceAdapter(Context context, ArrayList<Tour> tour) {
-        super(context, 0, tour);
+    public PlaceAdapter(Context context, ArrayList<Tour> places) {
+        super(context, 0, places);
     }
 
     @Override
@@ -37,6 +35,5 @@ public class PlaceAdapter extends ArrayAdapter<Tour> {
         TextView time = (TextView) listItemView.findViewById(R.id.travel_time);
         time.setText("Travel time:" + currentPlace.getTime());
         return listItemView;
-//        return super.getView(position, convertView, parent);
     }
 }

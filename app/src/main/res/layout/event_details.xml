@@ -14,5 +14,6 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/event"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/margin"/>
+        android:layout_marginTop="@dimen/margin"
+        android:id="@+id/event_name"/>
 </RelativeLayout>
