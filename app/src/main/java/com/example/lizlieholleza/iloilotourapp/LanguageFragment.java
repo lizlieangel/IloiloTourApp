@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -24,5 +25,8 @@ public class LanguageFragment extends Fragment {
         language.add(new Tour("Beautiful7", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
         language.add(new Tour("Beautiful8", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
 
+        LanguageAdapter adapter = new LanguageAdapter(getActivity(), language);
+        ListView lv = (ListView) rootview.findViewById(R.id.item_list);
+        lv.setAdapter(adapter);
     }
 }
