@@ -33,7 +33,7 @@ public class OptionAdapter extends FragmentPagerAdapter {
         if(position == 0) {
             return context.getString(R.string.places);
         } else {
-            return null;
+            return context.getString(R.string.events);
         }
     }
 }
