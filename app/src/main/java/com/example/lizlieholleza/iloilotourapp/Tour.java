@@ -47,11 +47,11 @@ public class Tour {
         return numberOfTours;
     }
 
-    public float getDistance() {
+    public int getDistance() {
         return distance;
     }
 
-    public float getTime() {
+    public int getTime() {
         return time;
     }
 
