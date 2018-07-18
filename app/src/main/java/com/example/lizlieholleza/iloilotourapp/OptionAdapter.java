@@ -19,13 +19,13 @@ public class OptionAdapter extends FragmentPagerAdapter {
         if(position == 0) {
             return new PlaceFragment();
         } else {
-            return null;
+            return new EventFragmment();
         }
     }
 
     @Override
     public int getCount() {
-        return 1;
+        return 2;
     }
 
     @Override
