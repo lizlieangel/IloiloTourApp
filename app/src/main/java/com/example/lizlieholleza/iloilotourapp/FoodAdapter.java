@@ -24,7 +24,7 @@ public class FoodAdapter extends ArrayAdapter<Tour> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
         if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.event_details,parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.food_details,parent, false);
         }
         Tour currentFood = getItem(position);
         ImageView image = (ImageView) listItemView.findViewById(R.id.food_image);
