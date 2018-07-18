@@ -11,12 +11,6 @@ public class Tour {
     private String englishWord;
     private String nativeWord;
 
-    public Tour(String place, int tours, int image) {
-        this.name = place;
-        this.numberOfTours = tours;
-        this.imageID = image;
-    }
-
     public Tour(String place, int distance, int time, int image) {
         this.name = place;
         this.distance = distance;
@@ -53,11 +47,11 @@ public class Tour {
         return numberOfTours;
     }
 
-    public int getDistance() {
+    public float getDistance() {
         return distance;
     }
 
-    public int getTime() {
+    public float getTime() {
         return time;
     }
 
