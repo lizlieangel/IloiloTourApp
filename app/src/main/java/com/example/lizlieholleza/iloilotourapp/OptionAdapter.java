@@ -1,7 +1,6 @@
 package com.example.lizlieholleza.iloilotourapp;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -18,22 +17,29 @@ public class OptionAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if(position == 0) {
             return new PlaceFragment();
-        } else {
+        } else if(position == 1){
             return new EventFragment();
+        } else {
+            return new FoodFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if(position == 0) {
-            return context.getString(R.string.places);
-        } else {
-            return context.getString(R.string.events);
+        switch (position) {
+            case 0:
+                return context.getString(R.string.places);
+            case 1:
+                return context.getString(R.string.events);
+            case 2:
+                return context.getString(R.string.food);
+            default:
+                return null;
         }
     }
 }
