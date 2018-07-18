@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -23,7 +24,9 @@ public class FoodFragment extends Fragment {
         food.add(new Tour("Miagao", "Ginamos", R.drawable.miagao));
         food.add(new Tour("Miagao", "Ginamos", R.drawable.miagao));
 
-
-
+        FoodAdapter adapter = new FoodAdapter(getActivity(),food);
+        ListView lv = (ListView) rootview.findViewById(R.id.item_list);
+        lv.setAdapter(adapter);
+        return rootview;
     }
 }
