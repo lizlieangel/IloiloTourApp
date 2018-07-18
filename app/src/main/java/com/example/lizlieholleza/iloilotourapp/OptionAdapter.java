@@ -19,7 +19,7 @@ public class OptionAdapter extends FragmentPagerAdapter {
         if(position == 0) {
             return new PlaceFragment();
         } else {
-            return new EventFragmment();
+            return new EventFragment();
         }
     }
 
