@@ -19,8 +19,10 @@ public class OptionAdapter extends FragmentPagerAdapter {
             return new PlaceFragment();
         } else if(position == 1){
             return new EventFragment();
-        } else {
+        } else if(position == 2) {
             return new FoodFragment();
+        } else {
+            return new LanguageFragment();
         }
     }
 
@@ -38,6 +40,8 @@ public class OptionAdapter extends FragmentPagerAdapter {
                 return context.getString(R.string.events);
             case 2:
                 return context.getString(R.string.food);
+            case 3:
+                return context.getString(R.string.language);
             default:
                 return null;
         }
