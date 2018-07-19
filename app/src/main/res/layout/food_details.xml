@@ -20,20 +20,24 @@
             android:layout_weight="1"
             android:id="@+id/food_name"
             android:textSize="@dimen/title_size"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/food_place"
-            android:textSize="@dimen/desc_size"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/food_place"
+            android:textStyle="bold"
+            android:gravity="top"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/food_desc"
             android:textSize="@dimen/desc_size"
-            android:textStyle="italic"/>
+            android:textStyle="italic"
+            android:gravity="top"/>
     </LinearLayout>
 </RelativeLayout>
