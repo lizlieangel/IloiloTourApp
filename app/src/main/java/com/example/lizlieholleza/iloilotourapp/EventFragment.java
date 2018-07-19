@@ -13,14 +13,14 @@ public class EventFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.item_list,container, false);
         final ArrayList<Tour> events = new ArrayList<Tour>();
-        events.add(new Tour("Dinagyang", R.drawable.miagao));
-        events.add(new Tour("Dinagyang1", R.drawable.miagao));
-        events.add(new Tour("Dinagyang2", R.drawable.miagao));
-        events.add(new Tour("Dinagyang3", R.drawable.miagao));
-        events.add(new Tour("Dinagyang4", R.drawable.miagao));
-        events.add(new Tour("Dinagyang5", R.drawable.miagao));
-        events.add(new Tour("Dinagyang6", R.drawable.miagao));
-        events.add(new Tour("Dinagyang7", R.drawable.miagao));
+        events.add(new Tour("Dinagyang", R.drawable.dinagyang));
+        events.add(new Tour("Bucari", R.drawable.bucari));
+        events.add(new Tour("Chess Tournament", R.drawable.chess));
+        events.add(new Tour("Garin Farm", R.drawable.garin_farm));
+        events.add(new Tour("Paraw Regatta", R.drawable.paraw_regatta));
+        events.add(new Tour("Sheridan Resort", R.drawable.resort));
+        events.add(new Tour("Museo de Iloilo", R.drawable.museum));
+        events.add(new Tour("Damires Resort", R.drawable.damires));
 
         EventAdapter adapter = new EventAdapter(getActivity(),events);
         ListView lv = (ListView) rootview.findViewById(R.id.item_list);
