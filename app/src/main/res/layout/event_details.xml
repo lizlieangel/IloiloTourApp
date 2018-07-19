@@ -8,12 +8,16 @@
         android:id="@+id/event_image"
         android:layout_width="match_parent"
         android:layout_height="@dimen/event_height"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/event"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/margin"
-        android:id="@+id/event_name"/>
+        android:id="@+id/event_name"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="@dimen/margin"/>
 </RelativeLayout>
