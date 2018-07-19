@@ -1,5 +1,6 @@
 package com.example.lizlieholleza.iloilotourapp;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -41,6 +42,7 @@ public class LanguageFragment extends Fragment {
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.item_list, container, false);
+        audioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         final ArrayList<Tour> language = new ArrayList<Tour>();
         language.add(new Tour("Beautiful1", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
         language.add(new Tour("Beautiful2", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
