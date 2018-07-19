@@ -31,7 +31,7 @@ public class FoodAdapter extends ArrayAdapter<Tour> {
         image.setImageResource(currentFood.getImageID());
         TextView food_name = (TextView) listItemView.findViewById(R.id.food_name);
         food_name.setText(currentFood.getFood());
-        TextView food_loc = (TextView) listItemView.findViewById(R.id.food_loc);
+        TextView food_loc = (TextView) listItemView.findViewById(R.id.food_desc);
         food_loc.setText(currentFood.getName());
         return listItemView;
     }
