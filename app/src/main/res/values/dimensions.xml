@@ -6,7 +6,7 @@
     <dimen name="event">24sp</dimen>
     <dimen name="desc_size">16sp</dimen>
     <dimen name="button_size">50dp</dimen>
-    <dimen name="event_height">200dp</dimen>
+    <dimen name="event_height">230dp</dimen>
     <dimen name="event_space">7dp</dimen>
     <dimen name="food_height">150dp</dimen>
     <dimen name="margin">15dp</dimen>
