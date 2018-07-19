@@ -44,14 +44,14 @@ public class LanguageFragment extends Fragment {
         View rootview = inflater.inflate(R.layout.item_list, container, false);
         audioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         final ArrayList<Tour> language = new ArrayList<Tour>();
-        language.add(new Tour("Beautiful1", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful2", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful3", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful4", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful5", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful6", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful7", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
-        language.add(new Tour("Beautiful8", "Gwapa", R.raw.family_older_sister, R.drawable.miagao));
+        language.add(new Tour("You're beautiful.", "Kagwapa simu.", R.raw.family_older_sister, R.drawable.h));
+        language.add(new Tour("I don't want to.", "Indi takun.", R.raw.family_older_sister, R.drawable.k));
+        language.add(new Tour("I love you.", "Palangga ta ikaw.", R.raw.family_older_sister, R.drawable.h));
+        language.add(new Tour("I can't live without you.", "Di takun mabuhi kung wara ka.", R.raw.family_older_sister, R.drawable.h));
+        language.add(new Tour("Turn right.", "Liko sa tuo.", R.raw.family_older_sister, R.drawable.k));
+        language.add(new Tour("Go home.", "Pagpuli run.", R.raw.family_older_sister, R.drawable.h));
+        language.add(new Tour("I don't know what to do.", "Indi ko bal-an kung ano akun ubrahon.", R.raw.family_older_sister, R.drawable.h));
+        language.add(new Tour("There's a dog!", "May ayam!", R.raw.family_older_sister, R.drawable.k));
 
         LanguageAdapter adapter = new LanguageAdapter(getActivity(), language);
         releaseMediaPlayer();
