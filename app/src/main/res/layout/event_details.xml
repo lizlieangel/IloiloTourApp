@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/event_height"
         android:layout_alignParentTop="true"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/event_space"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
