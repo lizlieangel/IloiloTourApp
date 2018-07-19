@@ -7,15 +7,15 @@
         android:id="@+id/lang_image"
         android:layout_width="@dimen/image_size"
         android:layout_height="@dimen/image_size"
-        android:margin="@dimen/event_space"
-        android:scaleType="centerCrop"
-        android:layout_marginRight="@dimen/margin"/>
+        android:layout_margin="@dimen/event_space"
+        android:scaleType="centerCrop" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_size"
         android:orientation="vertical"
         android:id="@+id/lang_container"
-        android:layout_toRightOf="@id/lang_image">
+        android:layout_toRightOf="@id/lang_image"
+        android:layout_toEndOf="@id/lang_image">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -38,5 +38,6 @@
         android:layout_centerVertical="true"
         android:id="@+id/play_button"
         android:layout_alignParentRight="true"
-        android:src="@drawable/ic_play_arrow"/>
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_play_arrow" />
 </RelativeLayout>
