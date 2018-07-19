@@ -9,6 +9,7 @@ public class Tour {
     private int soundID;
     private String englishWord;
     private String nativeWord;
+    private String description;
 
     public Tour(String place, int distance, int time, int image) {
         this.name = place;
@@ -22,9 +23,10 @@ public class Tour {
         this.imageID= image;
     }
 
-    public Tour(String place, String food, int image) {
+    public Tour(String place, String food, String description, int image) {
         this.name = place;
         this.food = food;
+        this.description = description;
         this.imageID = image;
     }
     public Tour(String englishWord, String nativeWord, int sound, int image) {
@@ -64,5 +66,9 @@ public class Tour {
 
     public String getFood() {
         return food;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
