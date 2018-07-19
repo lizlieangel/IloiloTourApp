@@ -16,11 +16,11 @@ public class PlaceFragment extends Fragment {
         View rootview = inflater.inflate(R.layout.item_list, container, false);
         final ArrayList<Tour> placeList = new ArrayList<Tour>();
         placeList.add(new Tour("Miagao", 19, 2,R.drawable.miagao));
-        placeList.add(new Tour("Miagao1", 12, 2,R.drawable.miagao));
-        placeList.add(new Tour("Miagao2", 17, 2,R.drawable.miagao));
-        placeList.add(new Tour("Miagao3", 18, 2,R.drawable.miagao));
-        placeList.add(new Tour("Miagao4", 15, 2,R.drawable.miagao));
-        placeList.add(new Tour("Miagao5", 10, 2,R.drawable.miagao));
+        placeList.add(new Tour("Cabatuan", 12, 2,R.drawable.cabatuan));
+        placeList.add(new Tour("Tubungan", 17, 2,R.drawable.tubungan));
+        placeList.add(new Tour("Jaro", 18, 2,R.drawable.jaro));
+        placeList.add(new Tour("Lambunao", 15, 2,R.drawable.lambunao));
+        placeList.add(new Tour("Molo", 10, 2,R.drawable.molo));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placeList);
         ListView lv = (ListView) rootview.findViewById(R.id.item_list);
