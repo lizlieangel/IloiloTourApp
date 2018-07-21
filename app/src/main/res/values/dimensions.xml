@@ -10,4 +10,5 @@
     <dimen name="event_space">7dp</dimen>
     <dimen name="food_height">150dp</dimen>
     <dimen name="margin">15dp</dimen>
+    <dimen name="place_height">350dp</dimen>
 </resources>
