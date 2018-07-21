@@ -11,6 +11,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/pInfo_place"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/pInfo_distance"
         android:gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin"/>
