@@ -1,10 +1,12 @@
 package com.example.lizlieholleza.iloilotourapp;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,6 +27,12 @@ public class PlaceFragment extends Fragment {
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), placeList);
         ListView lv = (ListView) rootview.findViewById(R.id.item_list);
         lv.setAdapter(adapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),MainActivity.class);
+            }
+        });
         return rootview;
     }
 }
