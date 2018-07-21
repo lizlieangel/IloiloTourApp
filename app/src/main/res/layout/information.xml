@@ -2,8 +2,22 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 <ImageView
     android:layout_width="match_parent"
-    android:layout_height="" />
+    android:layout_height="@dimen/place_height"
+    android:id="@+id/pInfo_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pInfo_distance"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pInfo_time"
+        android:gravity="center_horizontal"/>
 </LinearLayout>
