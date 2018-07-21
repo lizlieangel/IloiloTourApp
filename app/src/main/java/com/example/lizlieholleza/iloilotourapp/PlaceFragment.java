@@ -31,15 +31,12 @@ public class PlaceFragment extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                for(i = 0; i < placeList.size(); i++) {
                     Intent intent = new Intent(getActivity(), com.example.lizlieholleza.iloilotourapp.PlaceActivity.class);
                     intent.putExtra("pInfo_image", placeList.get(i).getImageID());
-                    Log.v("hello", placeList.get(i).getImageID() + "");
                     intent.putExtra("pInfo_place", placeList.get(i).getName());
-                    intent.putExtra("pInfo_distance", placeList.get(i).getDistance());
-                    intent.putExtra("pInfo_time", placeList.get(i).getTime());
+                    intent.putExtra("pInfo_distance", "Distance: " + placeList.get(i).getDistance() + " km");
+                    intent.putExtra("pInfo_time", "Travel time: " + placeList.get(i).getTime() + " hrs");
                     startActivity(intent);
-                }
             }
         });
         return rootview;
