@@ -3,6 +3,7 @@ package com.example.lizlieholleza.iloilotourapp;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +31,15 @@ public class PlaceFragment extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(),PlaceActivity.class);
+                for(i = 0; i < placeList.size(); i++) {
+                    Intent intent = new Intent(getActivity(), com.example.lizlieholleza.iloilotourapp.PlaceActivity.class);
+                    intent.putExtra("pInfo_image", placeList.get(i).getImageID());
+                    Log.v("hello", placeList.get(i).getImageID() + "");
+                    intent.putExtra("pInfo_place", placeList.get(i).getName());
+                    intent.putExtra("pInfo_distance", placeList.get(i).getDistance());
+                    intent.putExtra("pInfo_time", placeList.get(i).getTime());
+                    startActivity(intent);
+                }
             }
         });
         return rootview;
