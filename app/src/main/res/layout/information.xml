@@ -7,23 +7,29 @@
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="@dimen/place_height"
+    android:scaleType="centerCrop"
     android:id="@+id/pInfo_image"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pInfo_place"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/margin"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"/>
+
     <TextView
+        android:id="@+id/pInfo_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pInfo_distance"
-        android:gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/margin"/>
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/desc_size"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pInfo_time"
-        android:gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/desc_size"/>
 </LinearLayout>
