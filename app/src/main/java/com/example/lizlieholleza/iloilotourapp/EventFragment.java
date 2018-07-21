@@ -22,7 +22,7 @@ public class EventFragment extends Fragment{
         events.add(new Tour("Museo de Iloilo", R.drawable.museum));
         events.add(new Tour("Damires Resort", R.drawable.damires));
 
-        EventAdapter adapter = new EventAdapter(getActivity(),events, R.color.colorAccent);
+        EventAdapter adapter = new EventAdapter(getActivity(),events);
         ListView lv = (ListView) rootview.findViewById(R.id.item_list);
         lv.setAdapter(adapter);
         return rootview;
